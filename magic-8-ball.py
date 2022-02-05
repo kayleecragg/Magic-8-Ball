@@ -4,7 +4,7 @@ name = "Kaylee"
 question = "Will I be rich?"
 answer = ""
 
-random_number = random.randint(1, 9)
+random_number = random.randint(1, 11)
 
 if random_number == 1:
   answer = "Yes - definitely."
@@ -24,8 +24,16 @@ elif random_number == 8:
   answer = "Outlook not so good."
 elif random_number == 9: 
   answer = "Very doubtful."
+elif random_number == 10:
+  answer = "Unfortunately so."
+elif random_number == 11:
+  answer = "With no question."
 else:
   answer = "Error."
 
-print(name + " asks: " + question)
+if name == "":
+  print("Question: " + question)
+else:
+  print(name + " asks: " + question)
+
 print("Magic 8-Ball's answer: " + answer)
